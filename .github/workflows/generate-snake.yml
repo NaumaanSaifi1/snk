@@ -22,5 +22,6 @@ jobs:
           build_dir: dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        environment:
+        # MOVE THIS HERE (outside env)
+        environment: 
           name: github-pages
